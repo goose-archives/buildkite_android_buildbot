@@ -1,5 +1,18 @@
 #!/bin/bash
 
+export KERNEL_REPO_URL=https://github.com/crdroidandroid/android_kernel_xiaomi_chime.git
+export KERNEL_REPO_BRANCH=pyro
+export VENDOR_REPO_URL=https://github.com/KiranPranay/vendor_xiaomi_juice.git
+export VENDOR_REPO_BRANCH=11
+export DEVICE_TREE_REPO_URL=https://github.com/crdroidandroid/android_device_xiaomi_chime.git
+export DEVICE_TREE_REPO_BRANCH=11.0
+export DEVICE_CODENAME=chime
+export DEVICE_VENDOR=xiaomi
+export MANIFEST_URL=https://github.com/Halium/android.git
+export MANIFEST_BRANCH=halium-11.0
+export MANIFEST_INIT_OPTIONS=
+export SYNC_OPTIONS=-j$(nproc --all)
+
 echo Downloading sources
 mkdir making-zone && cd making-zone
 
